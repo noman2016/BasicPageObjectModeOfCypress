@@ -1,14 +1,14 @@
 ///<reference types="cypress" />
 import{loginPage} from "../pom_file/login_page.cy"
 
-const loginPage =new loginPage()
+const loginPage_ver =new loginPage()
 
     it('login test', function(){
 
-        loginPage.navigate()
-        loginPage.enterUsername()
-        loginPage.enterPassword()
-        loginPage.clickLogin()
+        loginPage_ver.navigate('https://trytestingthis.netlify.app/')
+        loginPage_ver.enterUsername('test')
+        loginPage_ver.enterPassword('test')
+        loginPage_ver.clickLogin()
 
     })
 
